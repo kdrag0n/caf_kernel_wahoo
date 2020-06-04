@@ -164,37 +164,10 @@ dtbo-$(CONFIG_ARCH_MSM8998) += \
 	msm8998-qrd-vr1-overlay.dtbo \
 	msm8998-qrd-skuk-overlay.dtbo
 
-dtbo-$(CONFIG_BOARD_MUSKIE) += \
-	overlay-walleye-xa_xb_xc.dtbo \
-	overlay-walleye-xd_xe_a.dtbo
+dtbo-$(CONFIG_BOARD_MUSKIE) += overlay-walleye-xd_xe_a.dtbo
+dtbo-$(CONFIG_BOARD_TAIMEN) += overlay-taimen-rev-1_0.dtbo
 
-dtbo-$(CONFIG_BOARD_TAIMEN) += \
-	overlay-taimen-rev-0.dtbo \
-	overlay-taimen-rev-a.dtbo \
-	overlay-taimen-rev-b.dtbo \
-	overlay-taimen-rev-c.dtbo \
-	overlay-taimen-rev-d.dtbo \
-	overlay-taimen-rev-e.dtbo \
-	overlay-taimen-rev-1_0.dtbo
-
-msm8998-cdp-overlay.dtbo-base :=  msm8998.dtb
-msm8998-mtp-overlay.dtbo-base :=  msm8998.dtb
-msm8998-v2-cdp-overlay.dtbo-base :=  msm8998-v2.dtb
-msm8998-v2-mtp-overlay.dtbo-base :=  msm8998-v2.dtb
-msm8998-v2.1-cdp-overlay.dtbo-base :=  msm8998-v2.1.dtb
-msm8998-v2.1-mtp-overlay.dtbo-base :=  msm8998-v2.1.dtb
-msm8998-qrd-overlay.dtbo-base :=  msm8998-qrd.dtb
-msm8998-qrd-vr1-overlay.dtbo-base :=  msm8998-qrd-vr1.dtb
-msm8998-qrd-skuk-overlay.dtbo-base :=  msm8998-qrd-skuk.dtb
-
-overlay-walleye-xa_xb_xc.dtbo-base := msm8998-v2.1-soc.dtb
 overlay-walleye-xd_xe_a.dtbo-base := msm8998-v2.1-soc.dtb
-overlay-taimen-rev-0.dtbo-base := msm8998-v2.1-soc.dtb
-overlay-taimen-rev-a.dtbo-base := msm8998-v2.1-soc.dtb
-overlay-taimen-rev-b.dtbo-base := msm8998-v2.1-soc.dtb
-overlay-taimen-rev-c.dtbo-base := msm8998-v2.1-soc.dtb
-overlay-taimen-rev-d.dtbo-base := msm8998-v2.1-soc.dtb
-overlay-taimen-rev-e.dtbo-base := msm8998-v2.1-soc.dtb
 overlay-taimen-rev-1_0.dtbo-base := msm8998-v2.1-soc.dtb
 else
 dtb-$(CONFIG_ARCH_MSM8998) += msm8998-sim.dtb \
