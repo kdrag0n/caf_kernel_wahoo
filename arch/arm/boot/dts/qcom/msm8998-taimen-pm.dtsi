@@ -251,7 +251,7 @@
 	vbus-supply = <&smb138x_vbus>;
 };
 
-&smb138x_parallel_slave {
+&smb1381_charger {
 	qcom,parallel-mode = <2>;
 	qcom,otg-current-limit = <4>;
 
